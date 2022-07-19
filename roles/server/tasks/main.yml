@@ -1,0 +1,18 @@
+---
+- name: Installing dependencies or (Server)
+  ansible.builtin.apt:
+    name: 
+      - apache2 
+      - ghostscript
+      - aptitude
+      - python3
+      - libapache2-mod-php
+      - mysql-server
+      - python3-pymysql
+     
+
+    state: latest 
+    update_cache: yes
+   
+    
+  #become: true
